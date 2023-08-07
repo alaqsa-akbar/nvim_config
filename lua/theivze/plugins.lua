@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
     }
 
     -- Theme
-    use({ 'EdenEast/nightfox.nvim', as = 'nightfox' })
+    use({ 'EdenEast/nightfox.nvim' })
     vim.cmd('colorscheme nightfox')
 
     -- Treesitter
