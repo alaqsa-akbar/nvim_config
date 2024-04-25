@@ -68,6 +68,11 @@ return require('packer').startup(function(use)
             require("dap-python").setup(path)
         end,
     }
+
+    use {
+        'https://github.com/nvim-neotest/nvim-nio'
+    }
+
     use {
         'rcarriga/nvim-dap-ui',
         requires = {"mfussenegger/nvim-dap"},
