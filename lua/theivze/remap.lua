@@ -12,3 +12,5 @@ vim.keymap.set("n", "<leader>dpr", function() require('dap-python').test_method(
 
 vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
 vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
+
+vim.keymap.set({"n", "i", "t"}, "<C-\\>", "<cmd>exe v:count1 . 'ToggleTerm'<CR>")

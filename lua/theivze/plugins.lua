@@ -105,4 +105,15 @@ return require('packer').startup(function(use)
 
     -- Background
     use 'xiyaowong/transparent.nvim'
+
+    -- Status Line
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    
+    -- Terminal
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
 end)
